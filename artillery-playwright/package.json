@@ -1,0 +1,31 @@
+{
+  "name": "artillery-playwright",
+  "version": "1.0.0",
+  "description": "The artillery tool integration with playwright for perfromance testing demo",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx playwright install && npm install -g artillery artillery-engine-playwright",
+    "prestart": "node index.js",
+    "start": "artillery run --output ./report/report.json dev.yaml",
+    "poststart": "artillery report ./report/report.json" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomashGombosh/js-performance.git"
+  },
+  "keywords": [
+    "playwright",
+    "performance",
+    "artillery",
+    "javascript"
+  ],
+  "author": "Tomash Gombosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomashGombosh/js-performance/issues"
+  },
+  "homepage": "https://github.com/TomashGombosh/js-performance#readme",
+  "dependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}

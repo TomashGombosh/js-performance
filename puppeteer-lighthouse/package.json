@@ -1,0 +1,30 @@
+{
+  "name": "puppeteer-lighthouse",
+  "version": "1.0.0",
+  "description": "The lighthouse tool integration with puppeteer for performance testing demo",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node index.js",
+    "start": "node mainPage.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomashGombosh/js-performance.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "lighthouse",
+    "performance",
+    "javascript"
+  ],
+  "author": "Tomash Gombosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomashGombosh/js-performance/issues"
+  },
+  "homepage": "https://github.com/TomashGombosh/js-performance#readme",
+  "dependencies": {
+    "lighthouse": "^9.6.8",
+    "puppeteer": "^19.2.2"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "k6-performance",
+  "version": "1.0.0",
+  "description": "The k6.io perfromance test demo ",
+  "main": "index.js",
+  "scripts": {
+    "install": "brew install k6",
+    "prestart": "node index.js",
+    "start": "k6 run mainPage.js --vus=4 --duration=20s",
+    "poststart": "node report.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomashGombosh/js-performance.git"
+  },
+  "keywords": [
+    "k6",
+    "javascript",
+    "performance"
+  ],
+  "author": "Tomash Gombosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomashGombosh/js-performance/issues"
+  },
+  "homepage": "https://github.com/TomashGombosh/js-performance#readme",
+  "devDependencies": {
+    "k6-html-reporter": "^1.0.5"
+  }
+}

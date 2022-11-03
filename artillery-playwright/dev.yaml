@@ -1,0 +1,17 @@
+config:
+  target: https://dev.buy-it.afj-solution.com/
+  phases:
+    - duration: 20
+      arrivalRate: 4
+  engines:
+    playwright: {}
+  processor: "./mainPage.test.js"
+scenarios:
+  - name: Desktop
+    engine: playwright
+    flowFunction: "mainPageFlow"
+    flow: []
+  - name: Mobile    
+    engine: playwright
+    flowFunction: "mainPageMobileFlow"
+    flow: []   
